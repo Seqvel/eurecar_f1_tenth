@@ -1,0 +1,19 @@
+<?xml version='1.0'?>
+
+<launch>
+
+  <!-- agent properties -->
+  <arg         name           = 'car_name'
+               default        = 'car_1'/>
+  <arg         name           = 'keyboard_control'
+               default        = 'true'/>
+
+  <!-- check if keyboard control is required -->
+  <group       if             = '$(arg keyboard_control)'>
+  <node        name           = 'keyboard_plugin'
+               pkg            = 'f1tenth-sim'
+               type           = 'keyboard_teleop.py'
+               output         = 'screen'
+               args           = '$(arg car_name)'/> </group>
+
+</launch>
