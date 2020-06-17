@@ -18,7 +18,7 @@ you can follow the instruction here:
 [ROS-melodic-installation/Ubuntu](http://wiki.ros.org/melodic/Installation/Ubuntu)
 
 Also, you can follow the documentation to start ROS and set the environment to use ros-command comfortably.
-[ROS/StartGuide](http://wiki.ros.org/ROS/StartGuide)
+See this page: [ROS/StartGuide](http://wiki.ros.org/ROS/StartGuide)
 
 
 ## Vehicle Controller(Skeleton Code) 
