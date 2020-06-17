@@ -344,7 +344,36 @@
     <axis xyz="0 0 1" />
   </joint>
 
+  <!-- Add IMU  -->
+  <link name="$(arg robot_name)_imu_link">
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.00000015" ixy="0" ixz="0" iyy="0.00000015" iyz="0" izz="0.00000015" />
+    </inertial>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.04 0.02 0.01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size = "0.04 0.02 0.01" />
+        <material name="black" />
+      </geometry>
+    </visual>
+  </link>
 
+  <joint name="$(arg robot_name)_imu_joint" type="fixed">
+    <origin xyz="0.125 0.0 0.155" rpy="0 0 0"/>
+    <parent link="$(arg robot_name)_chassis" />
+    <child link="$(arg robot_name)_imu_link" />
+    <axis xyz="0 0 1" />
+  </joint>
+
+  
   <!-- camera class (spawn parameters) -->
   <link name="$(arg robot_name)_link">
     <inertial>
@@ -509,6 +538,26 @@
     </gazebo>
   </xacro:unless>
 
+  <!-- imu -->
+  <!-- <xacro:unless value="$(optenv DISABLE_GAZEBO_IMU false)">
+    <gravity>true</gravity>
+    <sensor name='imu_sensor' type='imu'>
+        <always_on>1</always_on>
+        <update_rate>1000</update_rate>
+        <visualize>1</visualize>
+        <topic>__default_topic__</topic>
+        <plugin name='imu_plugin' filename='libgazebo_ros_imu_sensor.so'>
+            <topicName>imu_data</topicName>
+            <bodyName>$(arg robot_name)_imu_link</bodyName>
+            <updateRateHZ>50.0</updateRateHZ>
+            <gaussianNoise>0.0</gaussianNoise>
+            <xyzOffset>0 0 0</xyzOffset>
+            <rpyOffset>0 0 0</rpyOffset>
+        </plugin>
+        <pose>0 0 0 0 0 0</pose>
+    </sensor>
+  </xacro:unless> -->
+  
   <!-- camera object -->
   <xacro:unless value="$(optenv DISABLE_GAZEBO_CAMERA false)">
     <gazebo reference="$(arg robot_name)_camera_link">

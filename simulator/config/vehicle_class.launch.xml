@@ -75,6 +75,16 @@
                                  $(arg car_name)_laser
                                  20'/>
 
+  <!-- static base_laser_link -->
+  <node        name           = 'base_imu_link'
+               pkg            = 'tf'
+               type           = 'static_transform_publisher'
+               args           = '0.05 0.0 0.05
+                                 0.0   0.0 0.0
+                                 $(arg car_name)_base_link
+                                 $(arg car_name)_imu_link
+                                 20'/>
+
   <!-- launch base controller -->
   <node        name           = 'control_plugin'
                pkg            = 'f1tenth-sim'
