@@ -40,7 +40,7 @@ user@ros-computer: sudo apt-get install ros-melodic-effort-controllers
 ```
 user@ros-computer: sudo apt-get install ros-melodic-gazebo-dev
 user@ros-computer: sudo apt-get install ros-melodic-gazebo-ros-control
-user@ros-computer: sudo apt-get install ros-melodic-gazebo-ros-ros
+user@ros-computer: sudo apt-get install ros-melodic-gazebo-ros
 ``` 
 
 
