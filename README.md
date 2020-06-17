@@ -30,7 +30,7 @@ user@ros-computer: roslaunch f1tenth-sim key_control.launch
 ```
 You can modify the key_controller to add the motion or decrease the highest speed in the simulator.
 
-If your vehicle does not move even though you followed the instruction in the ros/f1tenth-dev, here are some possibilities we have experienced and resolved it. When packages listed below were not installed, the vehicle did not move and the error occurred. 
+If your vehicle does not move even though you followed the instruction in the **ros/f1tenth-dev**, here are some possibilities we have experienced and resolved it. When packages listed below were not installed, the vehicle did not move and the error occurred. 
 
 1. effort controller
 ```
