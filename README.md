@@ -20,6 +20,29 @@ you can follow the instruction here:
 Also, you can follow the documentation to start ROS and set the environment to use ros-command comfortably.
 See this page: [ROS/StartGuide](http://wiki.ros.org/ROS/StartGuide)
 
+## F1tenth Gazebo 
+We divided the origin f1tenth launch file into 2 steps: 
+1. start gazebo
+2. keyborad controller to move vehicle
+```
+user@ros-computer: roslaunch f1tenth-sim simulator.launch
+user@ros-computer: roslaunch f1tenth-sim key_control.launch
+```
+You can modify the key_controller to add the motion or decrease the highest speed in the simulator.
+
+If your vehicle does not move even though you followed the instruction in the ros/f1tenth-dev, here are some possibilities we have experienced and resolved it. When packages listed below were not installed, the vehicle did not move and the error occurred. 
+
+1. effort controller
+```
+user@ros-computer: sudo apt-get install ros-melodic-effort-controllers
+```
+2. gazebo packages
+```
+user@ros-computer: sudo apt-get install ros-melodic-gazebo-dev
+user@ros-computer: sudo apt-get install ros-melodic-gazebo-ros-control
+user@ros-computer: sudo apt-get install ros-melodic-gazebo-ros-ros
+``` 
+
 
 ## Vehicle Controller(Skeleton Code) 
 > You can use this form
