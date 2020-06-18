@@ -49,6 +49,8 @@ user@ros-computer: sudo apt-get install ros-melodic-gazebo-ros
 >	> You can use this form
 > > > You can use this form
 
+<img src="/media/gazebo_new_world.png" width="450px" height="300px" title="Gazebo world of oval shape track" alt="GazeboWorld"></img><br/>
+
 ```
 put the bash command in here.
 put the bash command in here.
@@ -70,8 +72,7 @@ put the bash command in here.
     - You can use this header
 
 ## Mapping & Localization(Google Cartographer) 
-
-![Alt text](/media/gazebo_new_world.png "Gazebo world of oval shape track")
+### Gazebo world(Oval shape)  
 <img src="/media/gazebo_new_world.png" width="450px" height="300px" title="Gazebo world of oval shape track" alt="GazeboWorld"></img><br/>
 > You can use this form
 >	> You can use this form
