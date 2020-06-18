@@ -44,18 +44,18 @@ user@ros-computer: sudo apt-get install ros-melodic-gazebo-ros
 ``` 
 
 
-## Vehicle Controller(Skeleton Code) 
+## Vehicle Controller(Skeleton Code)
+### 1.Waypoint Recording with manual driving
+![Alt text](/media/manual_control_for_waypoint_recording.png "Waypoint Recording")
+
 > You can use this form
 >	> You can use this form
 > > > You can use this form
-
-<img src="/media/gazebo_new_world.png" width="450px" height="300px" title="Gazebo world of oval shape track" alt="GazeboWorld"></img><br/>
-
 ```
 put the bash command in here.
 put the bash command in here.
 ```
-
+### 2. Fill the skeleton code to control the vehicle
 1. You can use this numbering
 2. You can use this numbering
 
