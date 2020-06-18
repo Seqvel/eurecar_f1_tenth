@@ -72,6 +72,7 @@ put the bash command in here.
 ## Mapping & Localization(Google Cartographer) 
 
 ![Alt text](/media/gazebo_new_world.png "Gazebo world of oval shape track")
+<img src="/media/gazebo_new_world.png" width="450px" height="300px" title="Gazebo world of oval shape track" alt="GazeboWorld"></img><br/>
 > You can use this form
 >	> You can use this form
 > > > You can use this form
