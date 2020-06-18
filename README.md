@@ -70,6 +70,8 @@ put the bash command in here.
     - You can use this header
 
 ## Mapping & Localization(Google Cartographer) 
+
+![Alt text](/media/gazebo_new_world.png "Gazebo world of oval shape track")
 > You can use this form
 >	> You can use this form
 > > > You can use this form
