@@ -43,6 +43,12 @@ user@ros-computer: sudo apt-get install ros-melodic-gazebo-ros-control
 user@ros-computer: sudo apt-get install ros-melodic-gazebo-ros
 ``` 
 
+## Oval track
+For using oval-shaped track, you need to copy some files in ~/.gazebo/models (If you don't have the directory, run `mkdir -p ~/.gazebo/models')
+```
+cp -r /simulator/world/oval_track ~/.gazebo/models
+```
+
 
 ## Vehicle Controller
 ### 1.Waypoint Recording with manual driving (waypoint_recorder)
