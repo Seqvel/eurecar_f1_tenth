@@ -98,8 +98,8 @@ def odom_callback(data):
     odom.child_frame_id       = base_frame
     odom.header.stamp         = rospy.Time.now()
     odom.pose                 = data.pose
-    odom.pose.pose.position.x = odom.pose.pose.position.x - 2.5
-    odom.pose.pose.position.y = odom.pose.pose.position.y + 7.0
+    # odom.pose.pose.position.x = odom.pose.pose.position.x - 2.5
+    # odom.pose.pose.position.y = odom.pose.pose.position.y + 7.0
     odom.twist = data.twist
 
     tf = TransformStamped(header         = Header(

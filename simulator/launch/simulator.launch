@@ -6,7 +6,7 @@
   <arg         name           = 'car_name'
                default        = 'car_1'/>
   <arg         name           = 'x_pos'
-               default        = '2.5'/>
+               default        = '0.0'/> <!-- 2.5 -->
   <arg         name           = 'y_pos'
                default        = '-7.0'/>
   <arg         name           = 'z_pos'
@@ -29,7 +29,7 @@
 
   <!-- simulator arguments -->
   <arg         name           = 'world_name'
-               default        = 'race_track'/>
+               default        = 'oval_track'/> <!-- race_track -->
   <arg         name           = 'gui'
                default        = 'true'/>
   <arg         name           = 'run_camera'
