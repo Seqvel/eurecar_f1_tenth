@@ -11,17 +11,17 @@ import tf
 from tf.transformations import euler_from_quaternion
 from nav_msgs.msg import Odometry
 
-# Params
+# Waypoint recorder Params
+filename = "test.csv"
+# now = datetime.now()
+# filename = str(now.year) + "_" + str(now.month) + "_" + str(now.day) + "_" + str(now.hour) + "_" + str(now.minute) + ".csv"
+WPT_CSV_PATH = "/home/seong/catkin_ws/src/waypoint_recorder/wpt_data/" + filename
+
 WPTS_GAP = 0.1 # [m]
 
 def calc_dist(tx, ty, ix, iy):
     return math.sqrt( (tx-ix)**2 + (ty-iy)**2 )
 
-# Waypoint recorder init
-now = datetime.now()
-# filename = str(now.year) + "_" + str(now.month) + "_" + str(now.day) + "_" + str(now.hour) + "_" + str(now.minute) + ".csv"
-filename = "test.csv"
-WPT_CSV_PATH = "/home/seong/catkin_ws/src/waypoint_recorder/wpt_data/" + filename
 if os.path.isfile(WPT_CSV_PATH):
     wpt_csv_data = pd.read_csv(WPT_CSV_PATH, sep=',', header=None)
 else:
