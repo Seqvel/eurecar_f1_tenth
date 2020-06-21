@@ -5,7 +5,6 @@ import pandas as pd
 
 import roslib
 import rospy
-from std_msgs.msg import Int16
 from nav_msgs.msg import Odometry
 from ackermann_msgs.msg import AckermannDrive
 import math
@@ -106,8 +105,8 @@ def steer_control(error_y, error_yaw):
 
     """
     ##### TODO: Steer control #####
-    kp_y = 0.2
-    kp_yaw = 0.4
+    kp_y = 0.0
+    kp_yaw = 0.0
     
     steer = kp_y*error_y + kp_yaw*error_yaw
     #########################
