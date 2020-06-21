@@ -44,32 +44,28 @@ user@ros-computer: sudo apt-get install ros-melodic-gazebo-ros
 ``` 
 
 
-## Vehicle Controller(Skeleton Code)
-### 1.Waypoint Recording with manual driving
+## Vehicle Controller
+### 1.Waypoint Recording with manual driving (waypoint_recorder)
 ![Alt text](/media/manual_control_for_waypoint_recording.png "Waypoint Recording")
 
-> You can use this form
->	> You can use this form
-> > > You can use this form
+Please refer to the waypoint_recorder package.
+
+To record,
 ```
-put the bash command in here.
-put the bash command in here.
+rosrun waypoint_recorder recorder.py
 ```
-### 2. Fill the skeleton code to control the vehicle
-1. You can use this numbering
-2. You can use this numbering
+To visualize the saved waypoint trajectory,
+```
+rosrun waypoint_recorder loader.py
+```
 
-* You can use this header
-  * You can use this header
-    * You can use this header
+### 2. Design the skeleton code to control the vehicle (waypoint_follower)
+Please refer to the waypoint_follwer package.
 
-+ You can use this header
-  + You can use this header
-    + You can use this header
-
-- You can use this header
-  - You can use this header
-    - You can use this header
+To run the controller,
+```
+rosrun waypoint_follower controller.py
+```
 
 ## Mapping & Localization(Google Cartographer) 
 ### Gazebo world(Oval shape)  
