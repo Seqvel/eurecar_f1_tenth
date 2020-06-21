@@ -44,7 +44,7 @@ user@ros-computer: sudo apt-get install ros-melodic-gazebo-ros
 ``` 
 
 ## Oval track
-For using oval-shaped track, you need to copy some files in ~/.gazebo/models (If you don't have the directory, run `mkdir -p ~/.gazebo/models')
+For using oval-shaped track, you need to copy some files in ~/.gazebo/models (If you don't have the directory, run `mkdir -p ~/.gazebo/models`)
 ```
 cp -r /simulator/world/oval_track ~/.gazebo/models
 ```
