@@ -1,0 +1,40 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/seong/carto_ws/install_isolated/include/**",
+        "/home/seong/catkin_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/seong/catkin_ws/src/eurecar_ros/visualization/detected_objects_visualizer/include/**",
+        "/home/seong/catkin_ws/src/eurecar_ros/communication/eurecar_lcm_to_ros_publisher/include/**",
+        "/home/seong/catkin_ws/src/eurecar_ros/communication/eurecar_ros_to_lcm_publisher/include/**",
+        "/home/seong/catkin_ws/src/eurecar_ros/planning/path_planning/frenet_path_planning/include/**",
+        "/home/seong/catkin_ws/src/eurecar_f1_tenth/hector_slam/hector_geotiff/include/**",
+        "/home/seong/catkin_ws/src/eurecar_f1_tenth/hector_slam/hector_map_tools/include/**",
+        "/home/seong/catkin_ws/src/eurecar_f1_tenth/hector_slam/hector_mapping/include/**",
+        "/home/seong/catkin_ws/src/eurecar_f1_tenth/hector_slam/hector_marker_drawing/include/**",
+        "/home/seong/catkin_ws/src/eurecar_ros/planning/behavior_planning/lateral/lateral_control_mode_byIndex_planner/include/**",
+        "/home/seong/catkin_ws/src/eurecar_ros/sensors/driver/microstrain_3dm_gx5/include/**",
+        "/home/seong/catkin_ws/src/myahrs_driver/include/**",
+        "/home/seong/catkin_ws/src/ocam_ros/include/**",
+        "/home/seong/catkin_ws/src/eurecar_ros/sensors/driver/ouster/ouster_client/include/**",
+        "/home/seong/catkin_ws/src/eurecar_ros/sensors/driver/ouster/ouster_ros/include/**",
+        "/home/seong/catkin_ws/src/eurecar_ros/sensors/driver/ouster/ouster_viz/include/**",
+        "/home/seong/catkin_ws/src/pointcloud_to_laserscan/include/**",
+        "/home/seong/catkin_ws/src/realsense-ros/realsense2_camera/include/**",
+        "/home/seong/catkin_ws/src/rrt_exploration_challenge_3/include/**",
+        "/home/seong/catkin_ws/src/teleop_twist_joy/include/**",
+        "/home/seong/catkin_ws/src/eurecar_ros/planning/velocity_planning/traffic_light_velocity_planner/include/**",
+        "/home/seong/catkin_ws/src/eurecar_ros/sensors/driver/velodyne/velodyne_driver/include/**",
+        "/home/seong/catkin_ws/src/eurecar_ros/sensors/driver/velodyne/velodyne_laserscan/include/**",
+        "/home/seong/catkin_ws/src/eurecar_ros/sensors/driver/velodyne/velodyne_pointcloud/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ]
+}
