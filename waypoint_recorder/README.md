@@ -27,6 +27,12 @@ You can change these parameters
 rosrun waypoint_recorder recorder.py
 ```
 
+For manual control using your keyboard inputs, run this package
+
+```
+rosrun ackermann_drive_teleop keyop
+```
+
 ### 2. Waypoint recorder (loader.py)
 Publish the waypoint recorded.
 
