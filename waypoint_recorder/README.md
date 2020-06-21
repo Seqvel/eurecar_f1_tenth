@@ -1,9 +1,6 @@
 # Waypoint Recorder
 Package for recording waypoint trajectory in the gazebo simulator.
 
-This project provides gazebo simulator and messages. 
-Therefore, it is a proper environment to implement such as vehicle control, simple mapping, and localization algorithm. We hope you to try whatever you want to test in this simulator. We modified the origin f1tenth model for you to use an IMU sensor. Also, we added the oval shape easy map.
-
 ## Requirements 
 1. Python packages
 ```
@@ -21,6 +18,7 @@ sudo apt-get install ros-melodic-nav-msgs
 ## Explanation
 ### 1. Waypoint recorder (recorder.py)
 Subscribe the current position of ego vehicle and save the position every specific distance.
+
 You can change these parameters
 - WPT_CSV_PATH : the path for saving your waypoint trajectory
 - WPTS_GAP     : the gap distance between each waypoint (Waypoint trajectory resolution)
@@ -31,7 +29,9 @@ rosrun waypoint_recorder recorder.py
 
 ### 2. Waypoint recorder (loader.py)
 Publish the waypoint recorded.
-For visualizing the waypoint, use rviz and add topic "/waypoint_markers".
+
+For visualizing the waypoint, use rviz and add topic "/waypoint_markers". Purple markers are the waypoints you recorded.
+
 You can change these parameters
 - WPT_CSV_PATH : the path for your saved waypoint trajectory
 
