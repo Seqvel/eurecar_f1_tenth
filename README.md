@@ -46,7 +46,7 @@ user@ros-computer: sudo apt-get install ros-melodic-gazebo-ros
 ## Oval track
 For using oval-shaped track, you need to copy some files in ~/.gazebo/models (If you don't have the directory, run `mkdir -p ~/.gazebo/models`)
 ```
-cp -r /simulator/world/oval_track ~/.gazebo/models
+user@ros-computer: cp -r /simulator/world/oval_track ~/.gazebo/models
 ```
 
 
@@ -58,11 +58,11 @@ Please refer to the waypoint_recorder package.
 
 To record,
 ```
-rosrun waypoint_recorder recorder.py
+user@ros-computer: rosrun waypoint_recorder recorder.py
 ```
 To visualize the saved waypoint trajectory,
 ```
-rosrun waypoint_recorder loader.py
+user@ros-computer: rosrun waypoint_recorder loader.py
 ```
 
 ### 2. Design the skeleton code to control the vehicle (waypoint_follower)
@@ -70,7 +70,7 @@ Please refer to the waypoint_follwer package.
 
 To run the controller,
 ```
-rosrun waypoint_follower controller.py
+user@ros-computer: rosrun waypoint_follower controller.py
 ```
 
 ## Mapping & Localization(Google Cartographer) 
