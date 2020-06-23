@@ -144,3 +144,56 @@ You can change these functions in controller.py
 Reference paper for designing controller
 - Automatic Steering Methods for Autonomous Automobile Path Tracking : https://www.ri.cmu.edu/pub_files/2009/2/Automatic_Steering_Methods_for_Autonomous_Automobile_Path_Tracking.pdf
 
+
+## Waypoint Recorder
+Package for recording waypoint trajectory in the gazebo simulator.
+
+### Requirements 
+1. Python packages
+```
+pip2 install numpy==1.16.6 --user
+pip2 install pandas==0.24.2 --user
+pip2 install roslib==1.14.8 --user
+```
+2. ROS Melodic messages
+```
+sudo apt-get install ros-melodic-geometry-msgs
+sudo apt-get install ros-melodic-visualization-msgs
+sudo apt-get install ros-melodic-nav-msgs
+```
+
+### Explanation
+#### 1. Waypoint recorder (recorder.py)
+Subscribe the current position of ego vehicle and save the position every specific distance.
+Simply run package and save waypoint in real-time.
+For stop recording, turn off this package using `ctrl + c`
+
+You can change these parameters
+- WPT_CSV_PATH : the path for saving your waypoint trajectory
+- WPTS_GAP     : the gap distance between each waypoint (Waypoint trajectory resolution)
+
+```
+rosrun waypoint_recorder recorder.py
+```
+
+For manual control using your keyboard inputs, run this package
+
+```
+rosrun ackermann_drive_teleop keyop
+```
+
+#### 2. Waypoint loader (loader.py)
+Publish the waypoint recorded.
+
+For visualizing the waypoint, use rviz and add topic "/waypoint_markers". Purple markers are the waypoints you recorded.
+
+You can change these parameters
+- WPT_CSV_PATH : the path for your saved waypoint trajectory
+
+```
+rosrun waypoint_recorder loader.py
+```
+
+![Alt text](./images/gazebo_rviz_wpt_following.jpg "Visualization of the waypoint trajectory")
+
+
