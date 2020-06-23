@@ -21,7 +21,7 @@ Also, you can follow the documentation to start ROS and set the environment to u
 See this page: [ROS/StartGuide](http://wiki.ros.org/ROS/StartGuide)
 
 ## F1tenth 
-If you finish to install ROS-melodic, you need to clone the git:
+If you finish to install ROS-melodic, you need to do git clone:
 ```
 user@ros-computer: cd ~/catkin_ws/src
 user@ros-computer: git clone https://github.com/Leedk3/eurecar_f1_tenth.git
