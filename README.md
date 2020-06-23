@@ -10,15 +10,15 @@ This project provides gazebo simulator and messages.
 Therefore, it is a proper environment to implement such as vehicle control, simple mapping, and localization algorithm. We hope you to try whatever you want to test in this simulator. We modified the origin f1tenth model for you to use an IMU sensor. Also, we added the oval shape easy map.
 
 ## ROS install guidance
-For ROS-beginner, we provide you a link installing ROS.
+> For ROS-beginner, we provide you a link installing ROS.
 
-We recomment you to install ROS-melodic distro.
+> We recomment you to install ROS-melodic distro.
 
-you can follow the instruction here:
-[ROS-melodic-installation/Ubuntu](http://wiki.ros.org/melodic/Installation/Ubuntu)
+> you can follow the instruction here:
+> [ROS-melodic-installation/Ubuntu](http://wiki.ros.org/melodic/Installation/Ubuntu)
 
-Also, you can follow the documentation to start ROS and set the environment to use ros-command comfortably.
-See this page: [ROS/StartGuide](http://wiki.ros.org/ROS/StartGuide)
+> Also, you can follow the documentation to start ROS and set the environment to use ros-command comfortably.
+> See this page: [ROS/StartGuide](http://wiki.ros.org/ROS/StartGuide)
 
 ## F1tenth install
 If you finish to install ROS-melodic, you need to do git clone:
