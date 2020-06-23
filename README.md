@@ -20,6 +20,14 @@ you can follow the instruction here:
 Also, you can follow the documentation to start ROS and set the environment to use ros-command comfortably.
 See this page: [ROS/StartGuide](http://wiki.ros.org/ROS/StartGuide)
 
+## F1tenth 
+If you finish to install ROS-melodic, you need to clone the git:
+```
+user@ros-computer: cd ~/catkin_ws/src
+user@ros-computer: git clone https://github.com/Leedk3/eurecar_f1_tenth.git
+user@ros-computer: cd ~/catkin_ws && catkin_make
+```
+
 ## F1tenth Gazebo 
 We divided the origin f1tenth launch file into 2 steps: 
 1. start gazebo
