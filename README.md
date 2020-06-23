@@ -57,6 +57,8 @@ For using oval-shaped track, you need to copy some files in ~/.gazebo/models (If
 user@ros-computer: cp -r /simulator/world/oval_track ~/.gazebo/models
 ```
 
+![Alt text](/media/gazebo_oval_track.png "Oval Track")
+
 
 ## Vehicle Controller
 ### 1.Waypoint Recording with manual driving (waypoint_recorder)
