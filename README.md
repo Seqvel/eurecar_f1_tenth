@@ -194,6 +194,6 @@ You can change these parameters
 rosrun waypoint_recorder loader.py
 ```
 
-![Alt text](./images/gazebo_rviz_wpt_following.jpg "Visualization of the waypoint trajectory")
+![Alt text](./waypoint_recorder/images/gazebo_rviz_wpt_following.jpg "Visualization of the waypoint trajectory")
 
 
