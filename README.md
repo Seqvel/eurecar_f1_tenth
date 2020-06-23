@@ -98,7 +98,7 @@ user@ros-computer: rosrun waypoint_follower controller.py
 ```
 
 ## Waypoint Follower
-Package for controlling the ego vehicle to follow the pre-built waypoint trajectory in the gazebo simulator.
+>Package for controlling the ego vehicle to follow the pre-built waypoint trajectory in the gazebo simulator.
 
 ### Requirements 
 1. Python packages
