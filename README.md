@@ -73,29 +73,3 @@ To run the controller,
 user@ros-computer: rosrun waypoint_follower controller.py
 ```
 
-## Mapping & Localization(Google Cartographer) 
-### Gazebo world(Oval shape)  
-<img src="/media/gazebo_new_world.png" width="450px" height="300px" title="Gazebo world of oval shape track" alt="GazeboWorld"></img><br/>
-> You can use this form
->	> You can use this form
-> > > You can use this form
-
-```
-put the bash command in here.
-put the bash command in here.
-```
-
-1. You can use this numbering
-2. You can use this numbering
-
-* You can use this header
-  * You can use this header
-    * You can use this header
-
-+ You can use this header
-  + You can use this header
-    + You can use this header
-
-- You can use this header
-  - You can use this header
-    - You can use this header
