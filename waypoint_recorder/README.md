@@ -18,6 +18,8 @@ sudo apt-get install ros-melodic-nav-msgs
 ## Explanation
 ### 1. Waypoint recorder (recorder.py)
 Subscribe the current position of ego vehicle and save the position every specific distance.
+Simply run package and save waypoint in real-time.
+For stop recording, turn off this package using `ctrl + c`
 
 You can change these parameters
 - WPT_CSV_PATH : the path for saving your waypoint trajectory
@@ -33,7 +35,7 @@ For manual control using your keyboard inputs, run this package
 rosrun ackermann_drive_teleop keyop
 ```
 
-### 2. Waypoint recorder (loader.py)
+### 2. Waypoint loader (loader.py)
 Publish the waypoint recorded.
 
 For visualizing the waypoint, use rviz and add topic "/waypoint_markers". Purple markers are the waypoints you recorded.
