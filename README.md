@@ -103,16 +103,16 @@ user@ros-computer: rosrun waypoint_follower controller.py
 ### Requirements 
 1. Python packages
 ```
-pip2 install numpy==1.16.6 --user
-pip2 install pandas==0.24.2 --user
-pip2 install roslib==1.14.8 --user
+user@ros-computer: pip2 install numpy==1.16.6 --user
+user@ros-computer: pip2 install pandas==0.24.2 --user
+user@ros-computer: pip2 install roslib==1.14.8 --user
 ```
 2. ROS Melodic messages
 ```
-sudo apt-get install ros-melodic-geometry-msgs
-sudo apt-get install ros-melodic-visualization-msgs
-sudo apt-get install ros-melodic-nav-msgs
-sudo apt-get install ros-melodic-ackermann-msgs
+user@ros-computer: sudo apt-get install ros-melodic-geometry-msgs
+user@ros-computer: sudo apt-get install ros-melodic-visualization-msgs
+user@ros-computer: sudo apt-get install ros-melodic-nav-msgs
+user@ros-computer: sudo apt-get install ros-melodic-ackermann-msgs
 ```
 
 ### Explanation
@@ -125,7 +125,7 @@ The task waypoint follower do are
 - Publish the control command
 
 ```
-rosrun waypoint_follower controller.py
+user@ros-computer: rosrun waypoint_follower controller.py
 ```
 
 ### TODO
@@ -151,15 +151,15 @@ Package for recording waypoint trajectory in the gazebo simulator.
 ### Requirements 
 1. Python packages
 ```
-pip2 install numpy==1.16.6 --user
-pip2 install pandas==0.24.2 --user
-pip2 install roslib==1.14.8 --user
+user@ros-computer: pip2 install numpy==1.16.6 --user
+user@ros-computer: pip2 install pandas==0.24.2 --user
+user@ros-computer: pip2 install roslib==1.14.8 --user
 ```
 2. ROS Melodic messages
 ```
-sudo apt-get install ros-melodic-geometry-msgs
-sudo apt-get install ros-melodic-visualization-msgs
-sudo apt-get install ros-melodic-nav-msgs
+user@ros-computer: sudo apt-get install ros-melodic-geometry-msgs
+user@ros-computer: sudo apt-get install ros-melodic-visualization-msgs
+user@ros-computer: sudo apt-get install ros-melodic-nav-msgs
 ```
 
 ### Explanation
@@ -173,13 +173,13 @@ You can change these parameters
 - WPTS_GAP     : the gap distance between each waypoint (Waypoint trajectory resolution)
 
 ```
-rosrun waypoint_recorder recorder.py
+user@ros-computer: rosrun waypoint_recorder recorder.py
 ```
 
 For manual control using your keyboard inputs, run this package
 
 ```
-rosrun ackermann_drive_teleop keyop
+user@ros-computer: rosrun ackermann_drive_teleop keyop
 ```
 
 #### 2. Waypoint loader (loader.py)
@@ -191,7 +191,7 @@ You can change these parameters
 - WPT_CSV_PATH : the path for your saved waypoint trajectory
 
 ```
-rosrun waypoint_recorder loader.py
+user@ros-computer: rosrun waypoint_recorder loader.py
 ```
 
 ![Alt text](./waypoint_recorder/images/gazebo_rviz_wpt_following.jpg "Visualization of the waypoint trajectory")
