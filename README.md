@@ -20,7 +20,7 @@ you can follow the instruction here:
 Also, you can follow the documentation to start ROS and set the environment to use ros-command comfortably.
 See this page: [ROS/StartGuide](http://wiki.ros.org/ROS/StartGuide)
 
-## F1tenth 
+## F1tenth install
 If you finish to install ROS-melodic, you need to do git clone:
 ```
 user@ros-computer: cd ~/catkin_ws/src
