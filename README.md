@@ -62,7 +62,6 @@ user@ros-computer: cp -r /simulator/world/oval_track ~/.gazebo/models
 
 ## Vehicle Controller
 ### 1.Waypoint Recording with manual driving (waypoint_recorder)
-![Alt text](/media/manual_control_for_waypoint_recording.png "Waypoint Recording")
 
 Please refer to the waypoint_recorder package.
 
