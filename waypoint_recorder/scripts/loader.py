@@ -5,6 +5,7 @@ import pandas as pd
 from datetime import datetime
 
 import roslib
+import rospkg
 import rospy
 import math
 import tf
@@ -12,11 +13,16 @@ from tf.transformations import euler_from_quaternion
 from visualization_msgs.msg import MarkerArray, Marker
 from geometry_msgs.msg import Point
 
-# WPT_CSV_PATH = "/home/seong/catkin_ws/src/waypoint_recorder/wpt_data/2020_6_16_21_26.csv"
-WPT_CSV_PATH = "/home/seong/catkin_ws/src/waypoint_recorder/wpt_data/test.csv"
+# Load waypoint path
+r = rospkg.RosPack()
+WPT_CSV_PATH = r.get_path('waypoint_recorder') + "/wpt_data/test.csv"
 
 # Load wpt file
-csv_data = pd.read_csv(WPT_CSV_PATH, sep=',', header=None)
+try:
+    csv_data = pd.read_csv(WPT_CSV_PATH, sep=',', header=None)
+except:
+    print("Assign appropriate path of waypoint csv file!")
+
 wpts_x = csv_data.values[:,0]
 wpts_y = csv_data.values[:,1]
 wpts_length = len(wpts_x)

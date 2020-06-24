@@ -5,6 +5,7 @@ import pandas as pd
 from datetime import datetime
 
 import roslib
+import rospkg
 import rospy
 import math
 import tf
@@ -12,10 +13,10 @@ from tf.transformations import euler_from_quaternion
 from nav_msgs.msg import Odometry
 
 # Waypoint recorder Params
-filename = "test.csv"
-# now = datetime.now()
-# filename = str(now.year) + "_" + str(now.month) + "_" + str(now.day) + "_" + str(now.hour) + "_" + str(now.minute) + ".csv"
-WPT_CSV_PATH = "/home/seong/catkin_ws/src/waypoint_recorder/wpt_data/" + filename
+r = rospkg.RosPack()
+now = datetime.now()
+filename = str(now.year) + "_" + str(now.month) + "_" + str(now.day) + "_" + str(now.hour) + "_" + str(now.minute) + ".csv"
+WPT_CSV_PATH = r.get_path('waypoint_recorder') + "/wpt_data/" + filename
 
 WPTS_GAP = 0.1 # [m]
 
